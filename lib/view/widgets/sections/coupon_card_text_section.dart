@@ -42,7 +42,7 @@ class CouponCardTextSection extends StatelessWidget {
               Text(
                 value,
                 style: TextStyle(
-                  fontSize: 28.sp,
+                  fontSize: 27.sp,
                   height: 0.9,
                 ),
               ),

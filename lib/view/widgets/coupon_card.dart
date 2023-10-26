@@ -11,50 +11,55 @@ class CouponCard extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: 32.w,
       ),
-      child: Container(
-        height: 167.h,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/coupon_card_bg.png"),
-            fit: BoxFit.fill,
-          ),
+      child: ConstrainedBox(
+        constraints: BoxConstraints(
+          maxHeight: 180.h,
+          minHeight: 167.h,
         ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(
-                left: 19.5.w,
-                right: 25.w,
-                top: 23.h,
-                bottom: 28.h,
-              ),
-              child: Image.asset(
-                "assets/images/pig.png",
-              ),
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/images/coupon_card_bg.png"),
+              fit: BoxFit.fill,
             ),
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const CouponCardTextSection(
-                    imagePath: "assets/icons/wallet.png",
-                    title: "Hai ottenuto coupon per",
-                    value: "0€",
-                  ),
-                  SizedBox(
-                    height: 14.h,
-                  ),
-                  const CouponCardTextSection(
-                    imagePath: "assets/icons/bill.png",
-                    title: "Scontrini giocati",
-                    value: "0",
-                  ),
-                ],
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(
+                  left: 19.5.w,
+                  right: 25.w,
+                  top: 23.h,
+                  bottom: 28.h,
+                ),
+                child: Image.asset(
+                  "assets/images/pig.png",
+                ),
               ),
-            ),
-          ],
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const CouponCardTextSection(
+                      imagePath: "assets/icons/wallet.png",
+                      title: "Hai ottenuto coupon per",
+                      value: "0€",
+                    ),
+                    SizedBox(
+                      height: 14.h,
+                    ),
+                    const CouponCardTextSection(
+                      imagePath: "assets/icons/bill.png",
+                      title: "Scontrini giocati",
+                      value: "0",
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
