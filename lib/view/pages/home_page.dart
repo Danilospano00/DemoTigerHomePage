@@ -14,30 +14,33 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: ListView(
-          padding: EdgeInsets.only(
-            top: MediaQuery.paddingOf(context).top,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const UserTileSection(),
+              SizedBox(
+                height: 24.h,
+              ),
+              const CouponCard(),
+              SizedBox(
+                height: 24.h,
+              ),
+              const LevelSection(),
+              SizedBox(
+                height: 24.h,
+              ),
+              const RewardSection(),
+              SizedBox(
+                height: 24.h,
+              ),
+              const HalloweenSection(),
+              SizedBox(
+                height: 60.h,
+              ),
+            ],
           ),
-          physics: const BouncingScrollPhysics(),
-          children: [
-            const UserTileSection(),
-            SizedBox(
-              height: 24.h,
-            ),
-            const CouponCard(),
-            SizedBox(
-              height: 24.h,
-            ),
-            const LevelSection(),
-            SizedBox(
-              height: 24.h,
-            ),
-            const RewardSection(),
-            SizedBox(
-              height: 24.h,
-            ),
-            const HalloweenSection(),
-          ],
         ),
       ),
     );

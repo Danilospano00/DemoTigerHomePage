@@ -61,17 +61,8 @@ flutter:
         - asset: assets/font/sarala.ttf
 
   assets:
-    - assets/images/mouse.png
-    - assets/images/coupon_card_bg.png
-    - assets/images/pig.png
-    - assets/images/cat.png
-    - assets/images/dog.png
-    - assets/images/pink_monster.png
-    - assets/images/sleeping_woman.png
-    - assets/images/bat.png
-    - assets/images/blue_monster.png
-    - assets/icons/bill.png
-    - assets/icons/wallet.png
+    - assets/images/
+    - assets/icons/
 
 
   # The following line ensures that the Material Icons font is
