@@ -47,7 +47,7 @@ class RewardSection extends StatelessWidget {
                         const CustomBottomSheet().show(context);
                       },
                       style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(0, 48),
+                        minimumSize: Size(0, 48.h),
                         padding: EdgeInsets.symmetric(
                           horizontal: 14.w,
                           vertical: 11.h,

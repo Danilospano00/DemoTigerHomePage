@@ -26,7 +26,7 @@ class _CounterButtonState extends State<CounterButton> {
         _controller.increment();
       },
       style: ElevatedButton.styleFrom(
-        minimumSize: const Size(0, 40),
+        minimumSize: Size(0, 40.h),
       ),
       child: Obx(
         () {
