@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:tandu_demo_project/controller/counter_controller.dart';
 
 class CounterButton extends StatefulWidget {
-  CounterButton({super.key});
+  const CounterButton({super.key});
 
   @override
   State<CounterButton> createState() => _CounterButtonState();
@@ -17,7 +17,7 @@ class _CounterButtonState extends State<CounterButton> {
     super.initState();
   }
 
-  final CounterController _controller = CounterController();
+  final CounterController _controller = Get.put(CounterController());
 
   @override
   Widget build(BuildContext context) {

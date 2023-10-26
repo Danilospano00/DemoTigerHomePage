@@ -5,7 +5,7 @@ import 'package:tandu_demo_project/view/widgets/coupon_card.dart';
 import 'package:tandu_demo_project/view/widgets/sections/halloween_section.dart';
 import 'package:tandu_demo_project/view/widgets/sections/level_section.dart';
 import 'package:tandu_demo_project/view/widgets/sections/reward_section.dart';
-import 'package:tandu_demo_project/view/widgets/sections/user_tile_section.dart';
+import 'package:tandu_demo_project/view/widgets/sections/header_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -15,11 +15,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const UserTileSection(),
+              const HeaderSection(),
               SizedBox(
                 height: 24.h,
               ),

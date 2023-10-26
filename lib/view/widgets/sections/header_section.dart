@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tandu_demo_project/view/widgets/counter_button.dart';
+import 'package:tandu_demo_project/view/widgets/sections/user_section.dart';
 
-class UserTileSection extends StatelessWidget {
-  const UserTileSection({super.key});
+class HeaderSection extends StatelessWidget {
+  const HeaderSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,21 +14,9 @@ class UserTileSection extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Image.asset(
-            "assets/images/mouse.png",
-            width: 50.sp,
-          ),
-          const SizedBox(
-            width: 7,
-          ),
-          Text(
-            "Matteo",
-            style: TextStyle(
-              fontSize: 16.sp,
-            ),
-          ),
+          UserSection(),
           const Spacer(),
-          CounterButton(),
+          const CounterButton(),
         ],
       ),
     );
