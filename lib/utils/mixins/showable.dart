@@ -16,6 +16,7 @@ mixin Showable on Widget {
   Future<T?> show<T>(BuildContext context) {
     return showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
       isDismissible: false,
       builder: (_) => this,
     );
