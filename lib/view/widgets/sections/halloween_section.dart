@@ -41,8 +41,8 @@ class HalloweenSection extends StatelessWidget {
                   Text(
                     "La senti anche tu questa forza?",
                     style: TextStyle(
-                      fontSize: 16.sp,
-                      height: 1,
+                      fontSize: 19.sp,
+                      height: 0.95,
                     ),
                   ),
                   SizedBox(
@@ -50,6 +50,9 @@ class HalloweenSection extends StatelessWidget {
                   ),
                   Text(
                     "Sblocca nuovi superpoteri!",
+                    style: TextStyle(
+                      fontSize: 13.sp,
+                    ),
                   ),
                 ],
               ),
